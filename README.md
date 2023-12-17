@@ -1,1 +1,0 @@
-# ZopSmart-Assignment
