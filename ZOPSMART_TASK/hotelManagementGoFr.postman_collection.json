@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "356b225b-1fbf-4f21-8d8f-fc40ce417a27",
+		"name": "hotelManagementGoFr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31812539"
+	},
+	"item": [
+		{
+			"name": "Add hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Sujeetgupta\",\"age\":20,\"enrollment\":\"201b276\"}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add hotel",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"Sujeetgupta\",\"age\":20,\"enrollment\":\"201b276\"}",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"add"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Content-Type, x-requested-with, origin, true-client-ip, X-Correlation-ID",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "PUT, POST, GET, DELETE, OPTIONS, PATCH",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain",
+							"type": "text"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "b10da0d29b2d11eebd4c705a0f08688b",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Dec 2023 09:38:24 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "&{{%!s(int=0) sujeetgupta %!s(int=20) 201b276} <nil>}"
+				}
+			]
+		},
+		{
+			"name": "View hotels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/view",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"view"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View hotels",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/view",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"view"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Content-Type, x-requested-with, origin, true-client-ip, X-Correlation-ID",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "PUT, POST, GET, DELETE, OPTIONS, PATCH",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "4f96b5529b2f11eeb735705a0f08688b",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Dec 2023 09:49:59 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "410",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"\",\n            \"age\": 0,\n            \"enrollment\": \"\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"\",\n            \"age\": 0,\n            \"enrollment\": \"\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"\",\n            \"age\": 0,\n            \"enrollment\": \"\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"\",\n            \"age\": 0,\n            \"enrollment\": \"\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"\",\n            \"age\": 0,\n            \"enrollment\": \"\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"John Doe\",\n            \"age\": 25,\n            \"enrollment\": \"XYZ123\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"sujeetgupta\",\n            \"age\": 20,\n            \"enrollment\": \"201b276\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"sujeetgupta\",\n            \"age\": 20,\n            \"enrollment\": \"201b276\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000",
+							"host": [
+								"localhost"
+							],
+							"port": "8000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Authorization, Content-Type, x-requested-with, origin, true-client-ip, X-Correlation-ID",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "PUT, POST, GET, DELETE, OPTIONS, PATCH",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "X-Correlation-Id",
+							"value": "23eb01869b3111ee8c41705a0f08688b",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 15 Dec 2023 10:03:05 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"Hello This is the hotel Management API\"\n}"
+				}
+			]
+		},
+		{
+			"name": "New request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
